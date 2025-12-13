@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 22, "column": 0}, "map": {"version":3,"sources":["file:///C:/Projects/07-routing-nextjs/app/page.tsx"],"sourcesContent":["import css from './home.module.css';\r\n\r\nexport default function Home() {\r\n  return (\r\n    <main>\r\n      <div className={css.container}>\r\n        <h1 className={css.title}>Welcome to NoteHub</h1>\r\n        <p className={css.description}>\r\n          NoteHub is a simple and efficient application designed for managing personal notes. It\r\n          helps keep your thoughts organized and accessible in one place, whether you are at home or\r\n          on the go.\r\n        </p>\r\n        <p className={css.description}>\r\n          The app provides a clean interface for writing, editing, and browsing notes. With support\r\n          for keyword search and structured organization, NoteHub offers a streamlined experience\r\n          for anyone who values clarity and productivity.\r\n        </p>\r\n      </div>\r\n    </main>\r\n  );\r\n}\r\n"],"names":[],"mappings":";;;;;AAAA;;;AAEe,SAAS;IACtB,qBACE,8OAAC;kBACC,cAAA,8OAAC;YAAI,WAAW,kIAAG,CAAC,SAAS;;8BAC3B,8OAAC;oBAAG,WAAW,kIAAG,CAAC,KAAK;8BAAE;;;;;;8BAC1B,8OAAC;oBAAE,WAAW,kIAAG,CAAC,WAAW;8BAAE;;;;;;8BAK/B,8OAAC;oBAAE,WAAW,kIAAG,CAAC,WAAW;8BAAE;;;;;;;;;;;;;;;;;AAQvC"}}]
+}

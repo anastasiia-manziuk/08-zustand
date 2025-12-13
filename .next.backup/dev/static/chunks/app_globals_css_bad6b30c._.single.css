@@ -1,0 +1,11 @@
+/* [project]/app/globals.css [app-client] (css) */
+body {
+  background-color: #f8f9fa;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+  display: flex;
+}
+
+/*# sourceMappingURL=app_globals_css_bad6b30c._.single.css.map*/

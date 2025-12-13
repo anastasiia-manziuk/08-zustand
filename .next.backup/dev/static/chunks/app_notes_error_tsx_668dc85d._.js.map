@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["C:/Projects/07-routing-nextjs/app/notes/error.tsx"],"sourcesContent":["'use client';\r\n\r\ninterface ErrorHandlerProps {\r\n  error: Error;\r\n}\r\n\r\nfunction ErrorHandler({ error }: ErrorHandlerProps) {\r\n  return <p>Could not fetch the list of notes. {error.message}</p>;\r\n}\r\n\r\nexport default ErrorHandler;\r\n"],"names":["c","_c","ErrorHandlerProps","error","Error","ErrorHandler","t0","$","$i","Symbol","for","t1","message"],"mappings":";;;;;AAAa,SAAAA,CAAA,IAAAC,EAAA;AAAb,YAAY;;;AAMZ,sBAAAK,EAAA;IAAA,MAAAC,CAAA,OAAAN,gLAAA,EAAA;IAAA,IAAAM,CAAA,CAAA,EAAA,KAAA,oEAAA;QAAA,IAAA,IAAAC,EAAA,GAAA,GAAAA,EAAA,GAAA,GAAAA,EAAA,IAAA,EAAA;YAAAD,CAAA,CAAAC,EAAA,CAAA,GAAAC,MAAA,CAAAC,GAAA,CAAA;QAAA;QAAAH,CAAA,CAAA,EAAA,GAAA;IAAA;IAAsB,MAAA,EAAAJ,KAAAA,EAAA,GAAAG,EAA4B;IAAA,IAAAK,EAAA;IAAA,IAAAJ,CAAA,CAAA,EAAA,KAAAJ,KAAA,CAAAS,OAAA,EAAA;QACzCD,EAAA,iBAAA,6LAAA,CAAyD;;gBAAtD,mCAAoC;gBAAAR,KAAK,CAAAS,OAAO,CAAE,EAArD,CAAyD;;;;;;;QAAAL,CAAA,CAAA,EAAA,GAAAJ,KAAA,CAAAS,OAAA;QAAAL,CAAA,CAAA,EAAA,GAAAI,EAAA;IAAA,OAAA;QAAAA,EAAA,GAAAJ,CAAA,CAAA,EAAA;IAAA;IAAA,OAAzDI,EAAyD;AAAA;KADlEN;uCAIeA,YAAY","ignoreList":[]}}]
+}

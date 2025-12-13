@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Projects/07-routing-nextjs/app/notes/error.tsx"],"sourcesContent":["'use client';\r\n\r\ninterface ErrorHandlerProps {\r\n  error: Error;\r\n}\r\n\r\nfunction ErrorHandler({ error }: ErrorHandlerProps) {\r\n  return <p>Could not fetch the list of notes. {error.message}</p>;\r\n}\r\n\r\nexport default ErrorHandler;\r\n"],"names":[],"mappings":";;;;;AAAA;;AAMA,SAAS,aAAa,EAAE,KAAK,EAAqB;IAChD,qBAAO,8OAAC;;YAAE;YAAoC,MAAM,OAAO;;;;;;;AAC7D;uCAEe"}}]
+}

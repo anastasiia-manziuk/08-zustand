@@ -1,0 +1,6 @@
+[00:00:05.507] Server  LOG      ✓ Ready in 4.1s
+[00:00:12.892] Server  LOG      ○ Compiling / ...
+[00:00:24.670] Server  LOG      ○ Compiling /notes ...
+[00:00:32.935] Server  ERROR   C:\Projects\07-routing-nextjs\.next\dev\server\chunks\ssr\node_modules_next_dist_3b4d20e1._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:00:32.938] Server  ERROR   C:\Projects\07-routing-nextjs\.next\dev\server\chunks\ssr\app_notes_filter_[___slug]_3a65706f._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:00:32.939] Server  WARN    Error: Route "/notes/filter/[...slug]" used `params.slug`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis

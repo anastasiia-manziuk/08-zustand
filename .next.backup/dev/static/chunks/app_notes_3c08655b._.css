@@ -1,0 +1,47 @@
+/* [project]/app/notes/LayoutNotes.module.css [app-client] (css) */
+.LayoutNotes-module__tSNQZa__container {
+  flex-direction: row;
+  flex: 1;
+  display: flex;
+}
+
+.LayoutNotes-module__tSNQZa__sidebar {
+  color: #fff;
+  background-color: #2c2c2c;
+  border-right: 1px solid #ddd;
+  flex-direction: column;
+  width: 250px;
+  padding: 16px;
+  display: flex;
+}
+
+.LayoutNotes-module__tSNQZa__notesWrapper {
+  width: 100%;
+}
+
+/* [project]/app/notes/filter/@sidebar/SidebarNotes.module.css [app-client] (css) */
+.SidebarNotes-module__RSw1fa__menuList {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.SidebarNotes-module__RSw1fa__menuItem {
+  margin-bottom: 16px;
+}
+
+.SidebarNotes-module__RSw1fa__menuLink {
+  color: #000;
+  padding: 8px 16px;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  display: block;
+}
+
+.SidebarNotes-module__RSw1fa__menuLink:hover {
+  color: #ddd;
+  background-color: #444;
+}
+
+/*# sourceMappingURL=app_notes_3c08655b._.css.map*/

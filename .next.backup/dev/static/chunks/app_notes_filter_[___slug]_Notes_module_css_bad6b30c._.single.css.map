@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/app/notes/filter/[...slug]/Notes.module.css"],"sourcesContent":[".app {\r\n  width: 90%;\r\n  max-width: 1280px;\r\n  margin: 0px auto;\r\n  padding: 0 16px 16px;\r\n}\r\n\r\n.toolbar {\r\n  margin-bottom: 16px;\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n  padding: 16px 0;\r\n  background-color: #f8f9fa;\r\n  border-bottom: 1px solid #dee2e6;\r\n}\r\n\r\n.button {\r\n  padding: 6px 12px;\r\n  font-size: 16px;\r\n  color: #fff;\r\n  background-color: #0d6efd;\r\n  border: none;\r\n  border-radius: 4px;\r\n  cursor: pointer;\r\n  transition: background-color 0.2s ease;\r\n}\r\n\r\n.button:hover {\r\n  background-color: #0b5ed7;\r\n}\r\n"],"names":[],"mappings":"AAAA;;;;;;;AAOA;;;;;;;;;;AAUA;;;;;;;;;;;AAWA"}}]
+}

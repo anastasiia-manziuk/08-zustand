@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Projects/07-routing-nextjs/app/loading.tsx"],"sourcesContent":["function Loading() {\r\n  return <p>Loading, please wait...</p>;\r\n}\r\n\r\nexport default Loading;\r\n"],"names":[],"mappings":";;;;;;AAAA,SAAS;IACP,qBAAO,8OAAC;kBAAE;;;;;;AACZ;uCAEe"}}]
+}

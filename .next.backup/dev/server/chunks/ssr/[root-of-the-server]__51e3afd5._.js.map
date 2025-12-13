@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 10, "column": 0}, "map": {"version":3,"sources":["file:///C:/Projects/07-routing-nextjs/components/TanStackProvider/TanStackProvider.tsx"],"sourcesContent":["'use client';\r\n\r\nimport { QueryClient, QueryClientProvider } from '@tanstack/react-query';\r\nimport { ReactQueryDevtools } from '@tanstack/react-query-devtools';\r\nimport { useState } from 'react';\r\n\r\ninterface TanstackProviderProps {\r\n  children: React.ReactNode;\r\n}\r\n\r\nfunction TanstackProvider({ children }: TanstackProviderProps) {\r\n  const [queryClient] = useState(() => new QueryClient());\r\n\r\n  return (\r\n    <QueryClientProvider client={queryClient}>\r\n      {children}\r\n      <ReactQueryDevtools />\r\n    </QueryClientProvider>\r\n  );\r\n}\r\n\r\nexport default TanstackProvider;\r\n"],"names":[],"mappings":";;;;;AAEA;AAAA;AACA;AACA;AAJA;;;;;AAUA,SAAS,iBAAiB,EAAE,QAAQ,EAAyB;IAC3D,MAAM,CAAC,YAAY,GAAG,IAAA,iNAAQ,EAAC,IAAM,IAAI,4LAAW;IAEpD,qBACE,8OAAC,6MAAmB;QAAC,QAAQ;;YAC1B;0BACD,8OAAC,0MAAkB;;;;;;;;;;;AAGzB;uCAEe"}}]
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/app/home.module.css [app-rsc] (css module)"],"sourcesContent":["__turbopack_context__.v({\n  \"container\": \"home-module__txgM7a__container\",\n  \"description\": \"home-module__txgM7a__description\",\n  \"main\": \"home-module__txgM7a__main\",\n  \"title\": \"home-module__txgM7a__title\",\n});\n"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA"}},
+    {"offset": {"line": 13, "column": 0}, "map": {"version":3,"sources":["file:///C:/Projects/07-routing-nextjs/app/not-found.tsx"],"sourcesContent":["import css from './home.module.css';\r\n\r\nfunction NotFound() {\r\n  return (\r\n    <div>\r\n      <h1 className={css.title}>404 - Page not found</h1>\r\n      <p className={css.description}>Sorry, the page you are looking for does not exist.</p>\r\n    </div>\r\n  );\r\n}\r\n\r\nexport default NotFound;\r\n"],"names":[],"mappings":";;;;;AAAA;;;AAEA,SAAS;IACP,qBACE,8OAAC;;0BACC,8OAAC;gBAAG,WAAW,kIAAG,CAAC,KAAK;0BAAE;;;;;;0BAC1B,8OAAC;gBAAE,WAAW,kIAAG,CAAC,WAAW;0BAAE;;;;;;;;;;;;AAGrC;uCAEe"}}]
+}

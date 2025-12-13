@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["file:///C:/Projects/07-routing-nextjs/app/notes/LayoutNotes.module.css"],"sourcesContent":[".container {\r\n  display: flex;\r\n  flex-direction: row;\r\n  flex: 1;\r\n}\r\n\r\n.sidebar {\r\n  width: 250px;\r\n  background-color: #2c2c2c;\r\n  color: white;\r\n  padding: 16px;\r\n  display: flex;\r\n  flex-direction: column;\r\n  border-right: 1px solid #ddd;\r\n}\r\n\r\n.notesWrapper {\r\n  width: 100%;\r\n}\r\n"],"names":[],"mappings":"AAAA;;;;;;AAMA;;;;;;;;;;AAUA"}},
+    {"offset": {"line": 22, "column": 0}, "map": {"version":3,"sources":["file:///C:/Projects/07-routing-nextjs/app/notes/filter/%40sidebar/SidebarNotes.module.css"],"sourcesContent":[".menuList {\r\n  list-style-type: none;\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\n\r\n.menuItem {\r\n  margin-bottom: 16px;\r\n}\r\n\r\n.menuLink {\r\n  text-decoration: none;\r\n  color: black;\r\n  font-size: 16px;\r\n  display: block;\r\n  padding: 8px 16px;\r\n  transition: background-color 0.3s ease;\r\n}\r\n\r\n.menuLink:hover {\r\n  background-color: #444;\r\n  color: #ddd;\r\n}\r\n"],"names":[],"mappings":"AAAA;;;;;;AAMA;;;;AAIA;;;;;;;;;AASA"}}]
+}
