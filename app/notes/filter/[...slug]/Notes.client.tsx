@@ -14,6 +14,8 @@ import Modal from '@/components/Modal/Modal';
 import NoteForm from '@/components/NoteForm/NoteForm';
 import Pagination from '@/components/Pagination/Pagination';
 import type { NotesResponse } from '@/lib/api';
+import Link from 'next/link';
+
 
 export type NotesClientProps = {
   dehydratedState?: DehydratedState;
@@ -55,9 +57,10 @@ export default function NotesClient({
             <Pagination page={page} totalPages={data?.totalPages ?? 1} onPageChange={setPage} />
           )}
 
-          <button className={css.button} onClick={createNoteModal.openModal}>
+          <Link href="/notes/action/create" className={css.button}>
             Create note +
-          </button>
+          </Link>
+
         </header>
 
         {isLoading && <strong className={css.loading}>Loading notes...</strong>}
