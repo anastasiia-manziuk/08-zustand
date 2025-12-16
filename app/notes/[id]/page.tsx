@@ -13,9 +13,20 @@ export async function generateMetadata(
   const { id } = await params;
   const note = await fetchNoteById(id);
 
+  const title = note.title;
+  const description = note.content?.slice(0, 160);
+
   return {
-    title: note.title,
-    description: note.content?.slice(0, 160),
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      url: `/notes/${id}`,
+      images: [
+        'https://ac.goit.global/fullstack/react/notehub-og-meta.jpg',
+      ],
+    },
   };
 }
 
@@ -35,3 +46,4 @@ export default async function NotePage({ params }: NoteProp) {
     </HydrationBoundary>
   );
 }
+
