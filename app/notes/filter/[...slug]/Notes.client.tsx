@@ -7,15 +7,11 @@ import { useQuery, HydrationBoundary, DehydratedState } from '@tanstack/react-qu
 import css from './Notes.module.css';
 
 import NoteList from '@/components/NoteList/NoteList';
-import useModalControl from '@/components/hooks/useModalControl';
 import SearchBox from '@/components/SearchBox/SearchBox';
-import { fetchNotes } from '@/lib/api';
-import Modal from '@/components/Modal/Modal';
-import NoteForm from '@/components/NoteForm/NoteForm';
 import Pagination from '@/components/Pagination/Pagination';
+import { fetchNotes } from '@/lib/api';
 import type { NotesResponse } from '@/lib/api';
 import Link from 'next/link';
-
 
 export type NotesClientProps = {
   dehydratedState?: DehydratedState;
@@ -32,8 +28,6 @@ export default function NotesClient({
 }: NotesClientProps) {
   const [search, setSearch] = useState(initialSearch);
   const [debouncedSearch] = useDebounce(search, 300);
-
-  const createNoteModal = useModalControl();
   const [page, setPage] = useState(initialPage);
 
   const handleSearchChange = (value: string) => {
@@ -54,13 +48,16 @@ export default function NotesClient({
           <SearchBox search={search} onChange={handleSearchChange} />
 
           {data?.totalPages && data.totalPages > 1 && (
-            <Pagination page={page} totalPages={data?.totalPages ?? 1} onPageChange={setPage} />
+            <Pagination
+              page={page}
+              totalPages={data.totalPages}
+              onPageChange={setPage}
+            />
           )}
 
           <Link href="/notes/action/create" className={css.button}>
             Create note +
           </Link>
-
         </header>
 
         {isLoading && <strong className={css.loading}>Loading notes...</strong>}
@@ -69,12 +66,6 @@ export default function NotesClient({
           <NoteList notes={data.notes} />
         ) : (
           !isLoading && <p>No notes found</p>
-        )}
-
-        {createNoteModal.isModalOpen && (
-          <Modal onClose={createNoteModal.closeModal}>
-            <NoteForm onCancel={createNoteModal.closeModal} />
-          </Modal>
         )}
       </div>
     </HydrationBoundary>

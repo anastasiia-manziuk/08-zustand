@@ -2,6 +2,7 @@
 
 import { useId } from 'react';
 import { useRouter } from 'next/navigation';
+import { useMutation, useQueryClient } from '@tanstack/react-query';
 
 import { useNoteStore } from '@/lib/store/noteStore';
 import { createNote } from '@/lib/api';
@@ -16,11 +17,26 @@ interface NoteFormProps {
 export default function NoteForm({ onCancel }: NoteFormProps) {
   const fieldId = useId();
   const router = useRouter();
+  const queryClient = useQueryClient();
 
   const { draft, setDraft, clearDraft } = useNoteStore();
 
+  const mutation = useMutation({
+    mutationFn: (data: CreateNoteData) => createNote(data),
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ['notes'] });
+      clearDraft();
+      router.back();
+    },
+    onError: (error) => {
+      console.error('Failed to create note', error);
+    },
+  });
+
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
   ) => {
     const { name, value } = e.target;
 
@@ -30,7 +46,7 @@ export default function NoteForm({ onCancel }: NoteFormProps) {
     });
   };
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     const data: CreateNoteData = {
@@ -43,13 +59,7 @@ export default function NoteForm({ onCancel }: NoteFormProps) {
       return;
     }
 
-    try {
-      await createNote(data);
-      clearDraft();      
-      router.back();     
-    } catch (error) {
-      console.error('Failed to create note', error);
-    }
+    mutation.mutate(data);
   };
 
   return (
@@ -113,7 +123,11 @@ export default function NoteForm({ onCancel }: NoteFormProps) {
         >
           Cancel
         </button>
-        <button type="submit" className={css.submitButton}>
+        <button
+          type="submit"
+          className={css.submitButton}
+          disabled={mutation.isPending}
+        >
           Create note
         </button>
       </div>

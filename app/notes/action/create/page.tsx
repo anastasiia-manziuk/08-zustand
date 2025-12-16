@@ -1,29 +1,19 @@
-'use client';
+import type { Metadata } from 'next';
+import CreateNoteClient from './CreateNote';
 
+export const metadata: Metadata = {
+  title: 'Create note',
+  description: 'Create a new note',
+  openGraph: {
+    title: 'Create note',
+    description: 'Create a new note',
+    url: '/notes/action/create',
+    images: [
+      'https://ac.goit.global/fullstack/react/notehub-og-meta.jpg',
+    ],
+  },
+};
 
-import NoteForm from "@/components/NoteForm/NoteForm";
-import css from './CreateNote.module.css';
-import { useRouter } from 'next/navigation';
-
-
-export default function CreateNote(){
-
-      const router = useRouter();
-
-  const handleCancel = () => {
-    router.back(); 
-  };
-
-    return(
-        
-        <main className={css.main}>
-        <div className={css.container}>
-        <h1 className={css.title}>Create note</h1>
-	     <NoteForm onCancel={handleCancel}/>
-        </div>
-        </main>
-
-        
-    )
-
+export default function CreateNotePage() {
+  return <CreateNoteClient />;
 }
