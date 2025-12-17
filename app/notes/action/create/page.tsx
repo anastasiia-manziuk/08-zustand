@@ -9,8 +9,10 @@ export const metadata: Metadata = {
     description: 'Create a new note',
     url: 'https://08-zustand-taupe-one.vercel.app/notes/action/create',
     images: [
-      'https://ac.goit.global/fullstack/react/notehub-og-meta.jpg',
-    ],
+  {
+    url: 'https://ac.goit.global/fullstack/react/notehub-og-meta.jpg',
+  },
+],
   },
 };
 
